@@ -1,2 +1,4 @@
 name: Your New Jekyll Site
 pygments: true
+
+baseurl: http://kushagra.me/blog/
