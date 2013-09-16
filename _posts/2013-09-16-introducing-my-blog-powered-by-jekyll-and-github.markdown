@@ -4,7 +4,7 @@ title:  "Introducing My Blog - Powered by Jekyll and Github"
 date:   2013-09-16 11:18:19
 ---
 
-Few months ago, I created a blog right here which was powered by [Anchor CMS][anchor] - A very beautiful blogging platform.
+Few months ago, I created a blog right here which was powered by [Anchor CMS][anchor] - a very beautiful blogging platform.
 It was cool and simple, but I wanted more control over how my blog works. So I removed Anchor CMS, and replaced it with [Jekyll][jekyll].
 Jekyll is one of the coolest thing I've came across - easy to setup and you can host it on github for free!
 
