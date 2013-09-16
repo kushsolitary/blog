@@ -38,7 +38,7 @@ span.separator {
   display: block;
   width: 48px;
   height: 13px;
-  background: url(/images/separator.png);
+  background: url(/blog/images/separator.png);
   margin: 35px auto;
 }
 
@@ -90,7 +90,7 @@ h1 {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 
   span.separator {
-    background: url(/images/separator@2x.png);
+    background: url(/blog/images/separator@2x.png);
     background-size: 48px 13px;
   }
 }
