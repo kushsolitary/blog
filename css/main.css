@@ -8,153 +8,129 @@
 * {
   margin: 0;
   padding: 0;
-}
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Lora';
+  color: #222;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;}
 
 html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  border-top: 15px solid #222;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+span.amp {
+  font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+  font-size: 150%;
+  font-style:italic;
+  font-weight: 400;
+  color: #aaa !important;
 }
 
-ul.posts li {
-  line-height: 1.75em;
+span.separator {
+  display: block;
+  width: 48px;
+  height: 13px;
+  background: url(/images/separator.png);
+  margin: 35px auto;
 }
 
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.site .header a {
-  font-weight: bold;
+a {
+  color: #27ae60;
   text-decoration: none;
 }
 
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
+a:hover {
+  color: #3498db;
 }
 
-.site .header h1.title a {
-  color: #a00;
+.basics {
+  text-align: center;
+  margin-top: 80px;
 }
 
-.site .header h1.title a:hover {
-  color: #000;
+span.blog_image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  background: #37BC9B;
+  margin: 0px auto 20px;
 }
 
-.site .header a.extra {
+span.blog_image i {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  line-height: 150px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.details {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #aaa;
-  margin-left: 1em;
+  margin: 7px 0;
+  letter-spacing: 3px;
+  font-variant:small-caps
 }
 
-.site .header a.extra:hover {
-  color: #000;
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+
+  span.separator {
+    background: url(/images/separator@2x.png);
+    background-size: 48px 13px;
+  }
 }
 
-.site .meta {
-  color: #aaa;
+ul.posts {
+  max-width: 700px;
+  margin: 50px auto;
+  list-style: none;
+  padding: 0 20px 50px;
 }
 
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
+ul.posts li {
+  color: #ccc;
+  font-size: 20px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
+ul.posts li span {
+  color: #ccc;
 }
 
-.site .footer .contact a {
-  color: #8085C1;
+div.post {
+  font-size: 20px;
+  max-width: 700px;
+  padding: 0 20px 50px;
+  margin: 50px auto;
+  line-height: 30px;
 }
 
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+div.post code {
+  color: #aaa;
+  font-family: Menlo, monospace, mono;
 }
 
-.site .footer .rss img {
-  border: 0;
+div.post p {
+  margin: 20px 0;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+  padding: 20px;
+  background: #eee;
 }
