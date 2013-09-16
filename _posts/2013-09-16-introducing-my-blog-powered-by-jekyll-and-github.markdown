@@ -23,5 +23,5 @@ I haven't set up any RSS feed for this blog yet, so you can [follow me on twitte
 
 [jekyll]:      http://jekyllrb.com
 [anchor]:      http://anchorcms.com
-[githubBlog]:  http://github.com/kushsolitary/blog
+[githubBlog]:  https://github.com/kushsolitary/blog/tree/gh-pages
 [twitter]:     http://twitter.com/kushsolitary
