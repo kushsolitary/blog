@@ -19,7 +19,7 @@ title: Your New Jekyll Site
     
   <ul class="posts">
     {% for post in site.posts %}
-      <li>&raquo; <a href="/blog/{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span> </li>
+      <li>&raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span> </li>
     {% endfor %}
   </ul>
 </div>
