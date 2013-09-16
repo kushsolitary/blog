@@ -8,7 +8,7 @@ Few months ago, I created a blog right here which was powered by [Anchor CMS][an
 It was cool and simple, but I wanted more control over how my blog works. So I removed Anchor CMS, and replaced it with [Jekyll][jekyll].
 Jekyll is one of the coolest thing I've came across - easy to setup and you can host it on github for free!
 
-The best thing about Jekyll is that you have full control over the working of your blog. Here's an excerpt from it's page:
+The best thing about Jekyll is that you have full control over the working of your blog. Here's an excerpt from its page:
 
 > Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, 
   runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, 
