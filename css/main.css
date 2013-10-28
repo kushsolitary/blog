@@ -122,6 +122,11 @@ div.post {
   line-height: 30px;
 }
 
+div.post h1, div.post h2, div.post h3 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
 div.post code {
   color: #aaa;
   font-family: Menlo, monospace, mono;
