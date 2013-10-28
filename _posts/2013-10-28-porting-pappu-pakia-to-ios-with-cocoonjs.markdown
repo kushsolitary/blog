@@ -42,15 +42,17 @@ for the first time (boy, I was in heaven)!
 Now there comes the interesting part – the UIWebView extension. I had to create a new file with all the UI elements and loaded it up using some
 default JS code given by CocoonJS's plugin.
 
-    CocoonJS.App.onLoadInTheWebViewSucceed.addEventListener(function(pageURL) {
-      CocoonJS.App.showTheWebView();
-    });
+{% highlight js %}
+CocoonJS.App.onLoadInTheWebViewSucceed.addEventListener(function(pageURL) {
+  CocoonJS.App.showTheWebView();
+});
 
-    CocoonJS.App.onLoadInTheWebViewFailed.addEventListener(function(pageURL) {
-      console.error("Could not load the HTML file in the webview");
-    });
+CocoonJS.App.onLoadInTheWebViewFailed.addEventListener(function(pageURL) {
+  console.error("Could not load the HTML file in the webview");
+});
 
-    CocoonJS.App.loadInTheWebView("game_screen");
+CocoonJS.App.loadInTheWebView("game_screen");
+{% endhighlight %}
 
 This loaded my `game_screen.html` file on top of the canvas. In this file, I put all my previous HTML code as it is, changed the styling a bit
 to perfectly fit any screen size and boom, it was showing perfectly in the CocoonJS launcher app! But ofcourse, the buttons were not working 
@@ -60,13 +62,15 @@ one exists or not.
 Here comes the best thing about CocoonJS. You can _forward_ the method calls from one view to another synchronously or asynchronously using just 
 one extra line of code. You can read more about it [here][cocoonjsdoc]. For example, to start the main game loop, I just had to do this:
 
-    ui.start_game.on('click', function() {
-      CocoonJS.App.forward("mit.startGame();");
-      // CocoonJS.App.forward("console.log('Start button touched');");
+{% highlight js %}
+ui.start_game.on('click', function() {
+  CocoonJS.App.forward("mit.startGame();");
+  // CocoonJS.App.forward("console.log('Start button touched');");
 
-      $("#start_screen").fadeOut();
-      return false;
-    });
+  $("#start_screen").fadeOut();
+  return false;
+});
+{% endhighlight %}
 
 The main magic lies in the `CocoonJS.App.forward();` function. It forwards the given string of commands to the other view, executes it there and 
 returns back the result. I did the same for every element and everything went smooth as expected. The game was up and running at 62fps!
