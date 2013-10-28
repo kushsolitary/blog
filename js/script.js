@@ -24,5 +24,6 @@ var colors = [
 ]
 
 // Set a different color on each reload
+var col = colors[Math.floor(Math.random() * colors.length)];
 var el = document.querySelector('span.blog_image');
-el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]; 
+el.style.backgroundColor = document.querySelector('a').style.color = col; 
