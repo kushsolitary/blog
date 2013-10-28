@@ -151,6 +151,10 @@ div.post p {
   background: #eee;
 }
 
+.post img {
+  text-align: center;
+}
+
 .post blockquote {
   padding-left: 30px;
   border-left: 5px solid #eee;

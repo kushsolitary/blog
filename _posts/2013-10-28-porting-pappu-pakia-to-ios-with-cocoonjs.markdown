@@ -6,14 +6,14 @@ comments: true
 ---
 
 I and [Rishabh][rishabhp] worked on a game for [Github GameOff 2012][gameoff] roughly a year ago and we named it Pappu Pakia.
-We were fortunate enough to score the first place (along with four other winners) and get our hands on our first iOS device.
+We were fortunate enough to win the first place (along with four other winners) and get our hands on our first iOS device - iPad 4.
 
 The game was pretty simple and was created using HTML5 Canvas. Everything (graphics, sounds and music) was created from scratch 
-(thanks to [Rezoner][rezoner] for the music!). It also hit the the [first page of HN][hnpost] where we got a lot of critiques and
-praises. We also received a lot of requests to make it an iOS game but it seemed hard as we had no experience in developing for iOS.
+(thanks to [Rezoner][rezoner] for the music!). It also hit the [first page of HN][hnpost] where we got a lot of critiques and
+praises. We also received a lot of requests to make it an iOS game, but it seemed hard as we had no experience in developing for iOS.
 
 We then came across [CocoonJS][cocoonjs] and [Phonegap][phonegap]. Using these, one can easily _transform_ their HTML5 app into 
-_native_ mobile apps without any extra effort. Phonegap is more focused on apps while CocoonJS is more focused on games as it
+_native_ mobile apps without any extra effort. Phonegap is more focused on web apps while CocoonJS is more focused on games as it
 accelerates the canvas by adding native graphics support. Back then, CocoonJS was very buggy and Phonegap was too slow for a game which made
 us drop the idea of porting the game to iOS.
 
@@ -90,7 +90,7 @@ in JS itself by using `var music = new Audio()` and load it up. It was enough to
 Conclusion
 ==========
 
-CocoonJS is still in development and has quite a number of bugs but it's perfect if you don't want to go into the hassle of learning native iOS
+CocoonJS is still in development and has quite a number of bugs but it's a good start if you don't want to go into the hassle of learning native iOS
 or Android development. It's like the best thing ever happened to indie game developers. We have some more plans of ideas for new games which
 we'll be working on very soon! I'll be writing up a more in-depth process on [Codetheory](http://codetheory.in) once the game is completed. 
 Also, the game is open-source so head over to [Github](https://github.com/mindd-it/pappu-pakia/) and feel free to experiment with it! 
