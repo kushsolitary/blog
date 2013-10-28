@@ -22,7 +22,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #FFF; 
   border-top: 15px solid #222;
 }
 
@@ -125,6 +125,11 @@ div.post {
 div.post code {
   color: #aaa;
   font-family: Menlo, monospace, mono;
+}
+
+div.post pre {
+  font-family: Menlo, monospace, mono;
+  font-size: 14px;
 }
 
 div.post p {
