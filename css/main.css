@@ -152,7 +152,8 @@ div.post p {
 }
 
 .post img {
-  text-align: center;
+  display: block;
+  margin: 0 auto;  
 }
 
 .post blockquote {
