@@ -127,9 +127,14 @@ div.post code {
   font-family: Menlo, monospace, mono;
 }
 
-div.post pre {
+div.post pre * {
   font-family: Menlo, monospace, mono;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.post pre {
+  overflow: auto;
 }
 
 div.post p {
