@@ -28,6 +28,8 @@ var col = colors[Math.floor(Math.random() * colors.length)];
 var el = document.querySelector('span.blog_image');
 el.style.backgroundColor = col; 
 
+/*
 var links = document.querySelectorAll('a');
 for(var i = 0; i < links.length; i++)
   links[i].style.color = col;
+*/
