@@ -26,16 +26,16 @@ various devices (with a lot of improvements too!). Here's the process I followed
 Process
 =======
 
-CocoonJS only accelerates the `canvas` element and doesn't care much about the DOM elements like links, spans etc. In our original
+CocoonJS only accelerates the `canvas` element and doesn't care much about the DOM elements like links, spans, etc. In our original
 game, we used a lot of DOM elements for the whole interface including menu, buttons, invincible timer and text. So, first of all I 
 removed all the UI elements and just kept the canvas element for drawing the game. CocoonJS automatically resizes the canvas to 
 fullscreen so I had to make the canvas flexible (previously it was 1000x500). 
 
-Previously, the background layers were made for 1000x500 canvas so I had to resize them to fit iPhone 5's screen but will make them
+Previously, the background layers were made for 1000x500 canvas so I had to resize them to fit iPhone 5's screen, but will make them
 flexible to fit any screen size soon enough.
 
 Now, as CocoonJS needs an extension (WebView) to handle DOM elements floating over canvas, I first removed all of my HTML code and just
-kept the JS code. For that, I had to create the canvas element using JS only which is also recommended in the CocoonJS's documentation.
+kept the JS code. For that, I had to create the canvas element using JS only, which is also recommended in the CocoonJS's documentation.
 After that, I removed/commented out all the methods for JS code that required the use of those UI elements which made the game work on CocoonJS
 for the first time (boy, I was in heaven)!
 
